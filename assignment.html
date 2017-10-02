@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Art collection (yay~)</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="assignment.css">
+		<script src="assignment.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid top">
+		<div class="vert">
+			<h1>Art collection</h1>
+			<h4>Inludes art from all amazing people</h4>
+			<p>I collected as much amazing art as I could find, this what I got to.</p>
+			<button data-toggle="collapse" data-target="#by" class="btn btn-artist">Made by</button>
+			<div id="by" class="collapse">
+				<p>a person</p><p>You don't need to know anything more than that.</p>
+			</div>
+		</div>
+		</div>
+		<div class="nav-wrapper">
+			<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="500">
+				<form class="navbar-form navbar-left">
+					
+					<input type="text" id="input" class="form-control" placeholder="Search">
+					
+					<button type="button" class="btn btn-artist" onclick="search()">Search</button>
+					
+				</form>
+				<form class="navbar-form navbar-left">
+			      	<div class="form-group">
+			    		<select id="select" class="select">
+			    			  <option>Genre</option>
+				              <option>My little pony</option>
+				              <option>Anime</option>
+			          	</select>
+			      	</div>
+	      			<button type="button" class="btn btn-artist" onclick="filter()">Search</button>
+	    		</form>
+			</nav>
+		</div>
+
+		<div class="row">
+			<div class="col-md-8">
+				<div class="container-fluid">
+					<h2 class="title"><u>ART 'N STUFF</u></h2>
+					<table class="table">
+						<tbody>
+							<tr class="b">
+								<th></th>
+								<th>Title</th>
+								<th>Artist</th>
+								<th>Genre</th>
+							</tr>
+							<tr class="a">
+								<td><img src=".\art\magic_forest_by_magnaluna-dbivwum.jpg" alt="Magic forest" style="width:450px;height:268.5px;"></td>
+								<td>Magic forest</td>
+								<td>Magna Luna</td>
+								<td>My little pony</td>
+							</tr>
+							<tr class="b">
+								<th></th>
+								<th>Title</th>
+								<th>Artist</th>
+								<th>Genre</th>
+							</tr>
+							<tr class="a">
+								<td><img src=".\art\chrysalis_by_koveliana-dbjx1je.png" alt="Chrysalis" style="width:450px;height:295.5px;"></td>
+								<td>Chrysalis</td>
+								<td>Koveliana</td>
+								<td>My little pony</td>
+							</tr>
+							<tr class="b">
+								<th></th>
+								<th>Title</th>
+								<th>Artist</th>
+								<th>Genre</th>
+							</tr>
+							<tr class="a">
+								<td><img src=".\art\aki_by_sasucchi95-dblafov.png" alt="Aki" style="width:450px;height:472.5px;"></td>
+								<td>Aki</td>
+								<td>sasucchi95</td>
+								<td>Anime</td>
+							</tr>
+							<tr class="b">
+								<th></th>
+								<th>Title</th>
+								<th>Artist</th>
+								<th>Genre</th>
+							</tr>
+							<tr class="a">
+								<td><img src=".\art\rd_by_mirroredsea-dblidk6.jpg" alt="RD" style="width:450px;height:470.25px;"></td>
+								<td>RD</td>
+								<td>mirroredsea</td>
+								<td>My little pony</td>
+							</tr>
+							<tr class="b">
+								<th></th>
+								<th>Title</th>
+								<th>Artist</th>
+								<th>Genre</th>
+							</tr>
+							<tr class="a">
+								<td><img src=".\art\eyes_open_by_mononucleosis_chan-dbjqjlr.png" alt="Eyes open" style="width:450px;height:471px"></td>
+								<td>Eyes open</td>
+								<td>Mononucleosis</td>
+								<td>Anime</td>
+							</tr>
+							<tr class="b">
+								<th></th>
+								<th>Title</th>
+								<th>Artist</th>
+								<th>Genre</th>
+							</tr>
+							<tr class="a">
+								<td><img src=".\art\colored_sketch_commission_by_sasucchi95-dbikr3l.png" alt="Colored sketch commission" style="width:450px;height:487.5px;"></td>
+								<td>Colored sketch commission</td>
+								<td>sasucchi95</td>
+								<td>Anime</td>
+							</tr>
+							<tr class="b">
+								<th></th>
+								<th>Title</th>
+								<th>Artist</th>
+								<th>Genre</th>
+							</tr>
+							<tr class="a">
+								<td><img src=".\art\shimakaze_by_chocamay-db9wkbm.png" alt="Shimakaze" style="width:450px;height:450px;"></td>
+								<td>Shimakaze</td>
+								<td>Chocamay</td>
+								<td>Anime</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<h4>A lot of work gets put into art, please support these amazing artists:</h4>
+				<table style="width: 100%;">
+					<tr>
+						<td style="font-size: 100%;width:25%;"><a href="https://magnaluna.deviantart.com/"><img src=".\art\magnaluna.jpg" alt="magnaluna"><p class="artist-name">Magnaluna</p></a><td>
+						<td style="font-size: 100%;"><a href="https://koveliana.deviantart.com/"><img src=".\art\koveliana.jpg" alt="koveliana"><p class="artist-name">Koveliana</p></a></td>
+						<td style="font-size: 100%;"><a href="https://sasucchi95.deviantart.com/"><img src=".\art\sasucchi95.gif" alt="sasucchi95"><p class="artist-name">sasucchi95</p></a></td>
+						<td style="font-size: 100%;"><a href="https://mirroredsea.deviantart.com/"><img src=".\art\mirroredsea.png" alt="mirroredsea"><p class="artist-name">mirroredsea</p></a></td>
+					</td>
+					<tr>
+						<td style="font-size: 100%;"><a href="https://mononucleosis-chan.deviantart.com/"><img src=".\art\mononucleosis-chan.png" alt="mononucleosis-chan"><p class="artist-name">Mononucleosis-chan</p></a><td>
+						<td style="font-size: 100%;"><a href="https://chocamay.deviantart.com/"><img src=".\art\chocamay.png" alt="chocamay"><p class="artist-name">Chocamay</p></a><td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>
